@@ -1,5 +1,5 @@
 # Book Summarizer
-This app allows users to summarize books by inputting a books title and authors name to create a summary with OpenAI backend. This is my first Ruby on Rails project to showcase my capabilities of learning different programming languages and tech stacks.
+This app allows users to input a books title and authors name to create a summary of a book with OpenAI backend. This is my first Ruby on Rails project to showcase my capabilities of learning different programming languages and tech stacks for project requirements.
 
 <!--
 * Ruby version: 3.2.2
