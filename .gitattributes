@@ -1,0 +1,16 @@
+# Set text (LF) line endings for certain file types
+*.rb text
+*.js text
+*.html text
+
+# Set binary line endings for specific file types
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Specify merge strategy for specific files
+config/database.yml merge=ours
+
+# Ignore changes to specific files
+Gemfile.lock -diff
+db/schema.rb -diff
