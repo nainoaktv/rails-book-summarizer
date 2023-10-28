@@ -68,3 +68,6 @@ group :test do
 end
 
 gem "openai"
+
+# Gemfile
+gem 'dotenv-rails', groups: [:development, :test]
