@@ -1,11 +1,8 @@
-# README
+# Book Summarizer
+This app allows users to summarize books by inputting a books title and authors name to create a summary with OpenAI backend. This is my first Ruby on Rails project to showcase my capabilities of learning different programming languages and tech stacks.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+<!--
+* Ruby version: 3.2.2
 
 * System dependencies
 
@@ -22,3 +19,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+-->
