@@ -1,0 +1,19 @@
+databases:
+  - name: bookSummarizer
+    databaseName: bookSummarizer
+    user: nainoaktv
+
+services:
+  - type: web
+    name: bookSummarizer
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bookSummarizer
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
