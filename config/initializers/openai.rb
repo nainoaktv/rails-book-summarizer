@@ -1,3 +1,3 @@
-# Openai.configure do |config|
-#   config.api_key = ENV['OPENAI_API_KEY']
-# end
+OpenAI.configure do |config|
+    config.access_token = ENV.fetch("OPENAI_API_KEY")
+end

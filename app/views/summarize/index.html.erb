@@ -1,4 +1,4 @@
-<h1>This is the summarize route</h1>
+<%# <h1 class="text-center">Search and Summarize Book</h1>
 <form>
   <div class="mb-3">
     <label for="bookTitle" class="form-label">Book Title</label>
@@ -10,4 +10,14 @@
   <input type="text" aria-label="Last Name" class="form-control">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> %>
+
+<%= form_tag('/summarize', method: :post) do %>
+  <%= label_tag :title %>
+  <%= text_field_tag :title %>
+  <%= label_tag :author_first_name %>
+  <%= text_field_tag :author_first_name %>
+  <%= label_tag :author_last_name %>
+  <%= text_field_tag :author_last_name %>
+  <%= submit_tag 'Search' %>
+<% end %>
